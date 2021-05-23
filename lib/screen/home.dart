@@ -21,12 +21,11 @@ class HomeScreen extends StatelessWidget {
                   icon: Icon(Icons.add),
                   label:
                       Text("สร้างบัญชีผู้ใช้", style: TextStyle(fontSize: 20)),
-                      onPressed: () {
-                      Navigator.pushReplacement(context, MaterialPageRoute(
-                        builder: (context){
-                          return RegisterScreen();
-                      })
-                    );
+                  onPressed: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) {
+                      return RegisterScreen();
+                    }));
                   },
                 ),
               ),
@@ -36,11 +35,10 @@ class HomeScreen extends StatelessWidget {
                   icon: Icon(Icons.login),
                   label: Text("เข้าสู่ระบบ", style: TextStyle(fontSize: 20)),
                   onPressed: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(
-                        builder: (context){
-                          return LoginScreen();
-                      })
-                    );
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) {
+                      return LoginScreen();
+                    }));
                   },
                 ),
               )
