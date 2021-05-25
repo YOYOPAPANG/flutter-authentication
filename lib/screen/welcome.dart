@@ -1,13 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:loginsystem/screen/%E0%B8%B7navigation.dart';
 
 import 'home.dart';
 
 class WelcomeScreen extends StatelessWidget {
-
   final auth = FirebaseAuth.instance;
-
+  // static const String id = 'welcome-screen';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +28,18 @@ class WelcomeScreen extends StatelessWidget {
                         }));
                      });
                   }, 
-                )
+                ),
+                // ElevatedButton(
+                //   child: Text("Map"),
+                //   onPressed: (){
+                //      auth.signOut().then((value){
+                //         Navigator.pushReplacement(context,
+                //         MaterialPageRoute(builder: (context){
+                //             return NavigationScreen();
+                //         }));
+                //      });
+                //   }, 
+                // )
             ],),
         ),
       ),
